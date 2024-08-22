@@ -118,6 +118,7 @@ Std_RetrunType gpio_pin_read(const pin_config_t *pin_confg,state_t *pin_state){
     }
     else
     {
+        *pin_state=READ_BIT(*port_reg[pin_confg->port],pin_confg->pin);
     }
     
     
